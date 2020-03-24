@@ -7,7 +7,6 @@ body{
 .cover{
 	color: white;
 	height:400px;
-	/*background: cornflowerblue;*/
 	background-image: url(../images/ppc15.jpg);
 	background-size: cover;
 	background-position: center;

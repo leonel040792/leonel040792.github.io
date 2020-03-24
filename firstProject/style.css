@@ -1,0 +1,36 @@
+body{
+
+	font-family: Helvetica, Arial, Sans-serif;
+
+}
+
+.cover{
+	color: white;
+	height:400px;
+	/*background: cornflowerblue;*/
+	background-image: url(../firstProject/images/ppc26.jpg);
+	background-size: cover;
+	background-position: center;
+	background-color: rgba(0,0,0,0.2);
+	background-blend-mode: darken;
+}
+
+.card{
+	display: inline-block;
+	border: none;
+	box-shadow: 0px 4px 6px -1px rgba(0,0,0,0.1), 0px 2px 4px -1px rgba(0,0,0,0.1);
+	border-radius: 15px;
+}
+
+.cover-small{
+	height: 200px;
+	background-blend-mode: normal;
+	border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+.card-title{
+	min-height: 2.25rem;
+}
+.card-text{
+	min-height: 8rem;
+}

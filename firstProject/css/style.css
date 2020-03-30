@@ -3,6 +3,10 @@ body{
 	font-family: Helvetica, Arial, Sans-serif;
 
 }
+.anchorMenu{
+	text-decoration: none;
+	color: #BB4430;
+}
 
 .cover{
 	color: white;
@@ -20,7 +24,11 @@ body{
 	box-shadow: 0px 4px 6px -1px rgba(0,0,0,0.1), 0px 2px 4px -1px rgba(0,0,0,0.1);
 	border-radius: 15px;
 }
-
+.col{
+	height: 100%;
+	padding-left: 0px;
+	padding-right: 0px;
+}
 .cover-small{
 	height: 200px;
 	background-blend-mode: normal;
@@ -32,4 +40,36 @@ body{
 }
 .card-text{
 	min-height: 8rem;
+}
+
+
+#mainContainer{
+	background: #EB5757;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #000000, #EB5757);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #000000, #EB5757); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	margin-top: 0rem !important;
+	/*margin-right: 0px;*/
+	margin-bottom: 0px !important;
+	/*margin-left: 0px;*/
+	max-width: 100%;	
+	max-height: 100%;	
+	padding-left: 0px;
+	padding-right: 0px;
+	/*padding-top: 3rem;*/
+	/*text-align: center;*/
+	height: 100vh;
+	justify-content: center;
+    display: flex;
+    align-items: center;
+
+}
+
+#mainContainer > div > div{
+	height: 100%;
+}
+
+#mainHeader{
+	position: fixed;
+	width: 100%;
+	z-index: 1;
 }

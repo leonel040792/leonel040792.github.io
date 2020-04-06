@@ -7,15 +7,35 @@ body{
 	text-decoration: none;
 	color: #BB4430;
 }
-
+#mainBKlogo{
+	margin: auto;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+#mainBKlogo > img{
+	max-height: 60px;
+}
 .cover{
 	color: white;
 	height:400px;
+	/*the previous two properties are applied to the other page*/
 	background-image: url(../images/ppc15.jpg);
 	background-size: cover;
 	background-position: center;
-	background-color: rgba(0,0,0,0.2);
 	background-blend-mode: darken;
+	transition: 0.5s;
+	filter: brightness(0.5);
+}
+.cover:hover{
+
+	filter: brightness(1);
+}
+.mainPageTitles{
+	top: 100px;
+    color: white;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
 }
 
 .card{
@@ -48,15 +68,11 @@ body{
 	background: -webkit-linear-gradient(to right, #000000, #EB5757);  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #000000, #EB5757); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	margin-top: 0rem !important;
-	/*margin-right: 0px;*/
 	margin-bottom: 0px !important;
-	/*margin-left: 0px;*/
 	max-width: 100%;	
 	max-height: 100%;	
 	padding-left: 0px;
 	padding-right: 0px;
-	/*padding-top: 3rem;*/
-	/*text-align: center;*/
 	height: 100vh;
 	justify-content: center;
     display: flex;
@@ -64,7 +80,7 @@ body{
 
 }
 
-#mainContainer > div > div{
+#mainContainer > div > a >div{
 	height: 100%;
 }
 

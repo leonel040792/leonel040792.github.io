@@ -20,8 +20,9 @@
 </head>
 <body>
 	<header>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<a class="navbar-brand" href="../index.html">Name/LOGO with a link <i class="fab fa-angular fa-spin"></i></a>
+
+		<nav class="navbar navbar-expand-lg navbar-light bg-light mainHeader">
+			<a class="navbar-brand mainLogo" href="../index.html" id='mainBKlogo'><img src="../images/theWayBKlogo.png"></a>
 			<ul class="nav">
 	      		<li class="nav-item active">
 	        		<a class="nav-link anchorMenu" href="./prospectparkchurch.html">Prospect Park Church</a>
@@ -34,49 +35,84 @@
 	      		</li>
 	    	</ul>
 		</nav>
-		<div class='cover d-flex justify-content-center align-items-center flex-column'>
-			<h1>The Way BK</h1>
-			<p>whatever slogan this is</p>
-			<button type="button" class="btn btn-dark">
-				Learn more
-			</button>
-		</div>
 	</header>
+	<!-- this first section is the main picture -->
 	<section>
-		<div class='container mt-5 mb-5'>
+		<div class='container quoteContainer'> <!-- mt means margin top and mb margin bottom-->
+			<p class="quote">Too many people feel lost and alone in our city. We hope you will open up a connection with us so that we can help you know Jesus, be guided by his Truth, and filled with his Love.</p>
+		</div>
+		<div id="bibleStudiesOptions"><h1>GROUP AND PERSONAL BIBLE STUDY OPPORTUNITIES</h1></div>
+	</section>
+	<!-- this section is with the options -->
+	<section>
+		<div class="classesContainer">
 			<div class="row">
-				<div class="col">
-					<div class="card" style="width: 18rem;">
-			 	  		<div class="cover cover-small" style="background-image: url(../images/ppc15.jpg)"></div>
-			 	  		<div class="card-body">
-			 	    		<h5 class="card-title">Card title</h5>
-			 	    		<p class="card-text">Some quick example text to build on the card 	title and make up the bulk of the card's content.</p>
-			 	    		<a href="#" class="btn btn-primary">Go somewhere</a>
-			 	  		</div>
-			 	  	</div>
-			 	</div> 
-			 	<div class="col">	
-			 		<div class="card" style="width: 18rem;">
-			 	  		<div class="cover cover-small" style="background-image: url(../images/ppc18.jpg)"></div>
-			 	  		<div class="card-body">
-			 	    		<h5 class="card-title">Card title</h5>
-			 	    		<p class="card-text">Some quick example text to build on the card 	title and make up the bulk of the card's content.</p>
-			 	    		<a href="#" class="btn btn-primary">Go somewhere</a>
-			 	  		</div>
-			 		</div>
-			 	</div>
-			 	<div class="col">
-			 		<div class="card" style="width: 18rem;">
-			 	  		<div class="cover cover-small" style="background-image: url(../images/ppc4.jpg)"></div>
-			 	  		<div class="card-body">
-			 	    		<h5 class="card-title">Card title</h5>
-			 	    		<p class="card-text">Some quick example text to build on the card 	title and make up the bulk of the card's content.</p>
-			 	    		<a href="#" class="btn btn-primary">Go somewhere</a>
-			 	  		</div>
-			 		</div> 
-			 	</div>	
-		    </div> 	
+				<div class="col-sm-6 col-lg-6 ">
+					<div class="card studiesPolaroid" style="width: 18rem;">
+  						<img src="../images/ppc23.jpg" class="card-img-top" alt="...">
+  						<div class="card-body">
+    						<h4 class='studiesTitles'>BROOKLYN BIBLE STUDIES</h4>
+  						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-6  polaroidText">
+					<p>Nearly every day or night of the week throughout the borough we host group discussions about <span>Scripture</span>. Come join the conversation or let us know when/where/what we should add to our current lineup.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6 col-lg-6  polaroidText">
+					<p>Faith in <span>Christ</span> does not develop in isolation nor in a mob. We would love to <span>connect with you personally</span> (face-to-face or via phone, Skype, email, etc.) to help you find <span>answers</span> to your questions.</p>
+				</div>
+				<div class="col-sm-6 col-lg-6 ">
+					<div class="card studiesPolaroid" style="width: 18rem;">
+  						<img src="../images/ppc18.jpg" class="card-img-top" alt="...">
+  						<div class="card-body">
+    						<h4 class='studiesTitles'>INDIVIDUAL BIBLE STUDY</h4>
+  						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6 col-lg-6 ">
+					<div class="card studiesPolaroid" style="width: 18rem;">
+  						<img src="../images/ppc3.jpg" class="card-img-top" alt="...">
+  						<div class="card-body">
+    						<h4 class='studiesTitles'>CONFERENCE CALL BIBLE STUDY</h4>
+  						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-6  polaroidText">
+					<p>Can't make it for in-person learning and fellowship right now? Join us for one of our weekly <span>conference call</span> group Bible studies! Message for details.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-3 col-lg-3  polaroidText">
+					<p>On Tuesdays, men and women enjoy focused, in-home gatherings to consider <span>Scripture</span>, pray together, and build relationships to strengthen one another to live as the Lord would have us to.</p>
+				</div>
+				<div class="col-sm-3 col-lg-3 ">
+					<div class="card studiesPolaroid" style="width: 18rem;">
+  						<img src="../images/ppc2.jpg" class="card-img-top" alt="...">
+  						<div class="card-body">
+    						<h4 class='studiesTitles'>MEN'S AND WOMEN'S SMALL GROUPS</h4>
+  						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 col-lg-3  polaroidText">
+					<p>Do you want to understand what it means to have and live by <span>faith</span> in <span>Christ</span>? Join us at the Central Library on Saturdays as we study through the letters written to Christians found in the <span>New Testament</span>. (Sessions at 3 PM and 4:15 PM)</p>
+				</div>
+				<div class="col-sm-3 col-lg-3 ">
+					<div class="card studiesPolaroid" style="width: 18rem;">
+  						<img src="../images/ppc20.jpg" class="card-img-top" alt="...">
+  						<div class="card-body">
+    						<h4 class='studiesTitles'>CENTRAL BROOKLYN LIBRARY BIBLE STUDIES</h4>
+  						</div>
+					</div>
+				</div>
+			</div>
+			
 		</div>
 	</section>
 </body>
 </html>
+
+<!-- Too many people feel lost and alone in our city. We hope you will open up a connection with us so that we can help you know Jesus, be guided by his Truth, and filled with his Love. -->--

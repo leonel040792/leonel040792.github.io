@@ -1,12 +1,8 @@
 body{
-
 	font-family: Helvetica, Arial, Sans-serif;
-
+	overflow-x: hidden;
 }
-.anchorMenu{
-	text-decoration: none;
-	color: #BB4430;
-}
+/*--------------------------HEADER------------------------------------*/
 #mainBKlogo{
 	margin: auto;
 	padding-top: 0px;
@@ -15,11 +11,43 @@ body{
 #mainBKlogo > img{
 	max-height: 60px;
 }
+.mainHeader{
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+	top: 0px;
+}
+/*the main page does not have it but the others do*/
+.anchorMenu{
+	text-decoration: none;
+	color: #BB4430;
+}
+.mainLogo{
+	margin: 0px !important;
+}
+
+/*-----------------------SECTION MAIN PAGE-----------------------------*/
+#mainContainer{
+	/*background: #EB5757;*/  /* fallback for old browsers */
+	/*background: -webkit-linear-gradient(to right, #000000, #EB5757); */ /* Chrome 10-25, Safari 5.1-6 */
+	/*background: linear-gradient(to right, #000000, #EB5757);*/ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	max-width: 100%;	
+	padding-left: 0px;
+	padding-right: 0px;
+	height: 100vh;
+	justify-content: center;
+    display: flex;
+    align-items: center;
+}
+#mainContainer > div > a >div{
+	height: 100%;
+}
+.col{
+	height: 100%;
+	padding-left: 0px;
+	padding-right: 0px;
+}
 .cover{
-	color: white;
-	height:400px;
-	/*the previous two properties are applied to the other page*/
-	background-image: url(../images/ppc15.jpg);
 	background-size: cover;
 	background-position: center;
 	background-blend-mode: darken;
@@ -38,54 +66,99 @@ body{
     text-decoration: none;
 }
 
-.card{
-	display: inline-block;
-	border: none;
-	box-shadow: 0px 4px 6px -1px rgba(0,0,0,0.1), 0px 2px 4px -1px rgba(0,0,0,0.1);
-	border-radius: 15px;
-}
-.col{
-	height: 100%;
-	padding-left: 0px;
-	padding-right: 0px;
-}
-.cover-small{
-	height: 200px;
-	background-blend-mode: normal;
-	border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
-}
-.card-title{
-	min-height: 2.25rem;
-}
-.card-text{
-	min-height: 8rem;
-}
 
-
-#mainContainer{
-	background: #EB5757;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #000000, #EB5757);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #000000, #EB5757); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	margin-top: 0rem !important;
-	margin-bottom: 0px !important;
-	max-width: 100%;	
-	max-height: 100%;	
-	padding-left: 0px;
-	padding-right: 0px;
-	height: 100vh;
-	justify-content: center;
+/*--------------------------------BK BIBLE STUDIES-----------------------*/
+.quoteContainer{
+	background-image: url('../images/brooklynBridge.jpg');
+	max-width: 100%;
+	background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
     display: flex;
     align-items: center;
-
+    justify-content: center;
+    margin-top: 76px;
+}
+.quote{
+	padding: 1em;
+	color: white;
+    max-width: 80%;
+    font-size: 2em;
+    text-align: justify;
+    text-shadow: black 1px 1px 7px;
+    background: rgba(255,255,255,0.2);
+}
+#bibleStudiesOptions h1{
+	color: white;
+	background: grey;
+	min-height: 100px;
+	margin:0px;
+	padding:1em;
+	text-align: center;
 }
 
-#mainContainer > div > a >div{
-	height: 100%;
+
+
+
+.classesContainer:first-child{
+	background-image: url(../images/wood.jpg);
+	min-height: 450px;
+}
+.studiesPolaroid{
+	width: 18em;
+	min-height: 23em;
+    margin: auto;
+    margin-top: 3em;
+    padding-top: 2em;
+    /*transform: rotate(15deg);*/
+    border-radius: 0px;
+    border: 0px;
+    box-shadow: rgba(0,0,0,1) 5px 5px 10px 2px;
+
+}
+.classesContainer .row:nth-child(1) .studiesPolaroid{ /*Brooklyn Bible studies*/
+	transform: rotate(-22deg);
+}
+.classesContainer .row:nth-child(2) .studiesPolaroid{ /*Individual Bible study*/
+	transform: rotate(15deg);
+}
+.classesContainer .row:nth-child(3) .studiesPolaroid{ /*Conference call Bible study*/
+	transform: rotate(-5deg);
+}
+.classesContainer .row:nth-child(4) div:nth-child(2) div:first-child{ /*Men's and women's*/
+	transform: rotate(-15deg);
+}
+.classesContainer .row:nth-child(4) div:nth-child(4) div:first-child{ /*Central Brooklyn library*/
+	transform: rotate(40deg);
+}
+.studiesPolaroiid img{
+	border-radius: 0px;
+}
+.polaroidText{
+	display: flex;
+	align-items: center;
+    font-size: 150%;
+    font-weight: 300;
+    color: rgba(255,255,255,1);
+}
+.polaroidText p span{
+	color: brown;
+	font-weight: 400;
+}
+.polaroidText p{
+	text-shadow: rgba(0,0,0,1) 1px 1px 2px;
+    background: rgba(255,255,255,0.2);
+    width: 80%;
+    position: absolute;
+    right: 0px;
+    padding: 1em;
+}
+/*.classesContainer:nth-child(1) > .row > div.polaroidText{
+	padding-left: 0px;
+}*/
+.studiesTitles{
+	text-align: center;
+	font-weight: 600;
 }
 
-#mainHeader{
-	position: fixed;
-	width: 100%;
-	z-index: 1;
-}

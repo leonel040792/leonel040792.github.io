@@ -107,11 +107,10 @@ body{
 }
 .studiesPolaroid{
 	width: 18em;
-	min-height: 23em;
+	height: 23em;
     margin: auto;
     margin-top: 3em;
     padding-top: 2em;
-    /*transform: rotate(15deg);*/
     border-radius: 0px;
     border: 0px;
     box-shadow: rgba(0,0,0,1) 5px 5px 10px 2px;
@@ -154,9 +153,6 @@ body{
     right: 0px;
     padding: 1em;
 }
-/*.classesContainer:nth-child(1) > .row > div.polaroidText{
-	padding-left: 0px;
-}*/
 .studiesTitles{
 	text-align: center;
 	font-weight: 600;

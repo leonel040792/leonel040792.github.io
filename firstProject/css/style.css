@@ -1,161 +1,91 @@
+@font-face{
+	src: url(../fonts/robotoSlab.ttf);
+	font-family: robotoSlab;
+}
 body{
-	font-family: Helvetica, Arial, Sans-serif;
+	font-family: robotoSlab, Helvetica, Arial, Sans-serif;
 	overflow-x: hidden;
 }
 /*--------------------------HEADER------------------------------------*/
-#mainBKlogo{
-	margin: auto;
-	padding-top: 0px;
-	padding-bottom: 0px;
-}
-#mainBKlogo > img{
-	max-height: 60px;
-}
 .mainHeader{
-	position: fixed;
-	width: 100%;
-	z-index: 1;
-	top: 0px;
-	background-color: #E0E0E2 !important;
+	background: transparent !important;
+	position: absolute;
 }
-/*the main page does not have it but the others do*/
-.anchorMenu{
-	text-decoration: none;
-	color: #BB4430;
+.mainHeader img{
+	max-height: 70px;
 }
-.mainLogo{
-	margin: 0px !important;
-}
-
-/*-----------------------SECTION MAIN PAGE-----------------------------*/
 #mainContainer{
+	height: 100vh;
+	margin:0px;
+	background-image: url(../images/fondo.svg);
+}
+.mainOptions{
+	margin-top: 100px;
+	position: relative;
+	display: inline-block;
+	height: 80%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	border-radius: 2%;
+}
+#mainContainer div:nth-child(1) div.mainOptions{
+	background-image: url(../images/ppc4.jpg);
+}
+#mainContainer div:nth-child(2) div.mainOptions{
+	background-image: url(../images/ppc5.jpg);
+}
+#mainContainer div:nth-child(3) div.mainOptions{
+	background-image: url(../images/ppc18.jpg);
+}
+.mainOptionsTitle, .mainOptionsText{
+	color: #ffff;
+	width: 70% !important;
+    margin: auto;
+}
+.mainOptionsTitle{
+	font-weight: 800;
+	font-size: 3em;
+	margin-top: 30% !important;
+	line-height: 45px;
+}
+.mainOptionsText{
+	text-align: justify;
+	margin-top: 20px;
+	font-weight: 300;
+	background: rgba(0,0,0,0.3);
+    box-shadow: rgba(0,0,0,0.3) 0em 0em 1em 1em;
+}
+.mainOptionsLink a{
+	color: #ffff;
+	font-weight: 800;
+	text-decoration: none;
+	position: absolute;
+    width: 40%;
+    border: solid 3px #FFFF;
+    border-radius: 40px;
+    padding: 1em;
+    bottom: 20px;
+    margin-left: 15%;
+    transition: .5s;
+}
+.arrowIcon{
+	color: #ffff;
+	margin-left: 5px;
+	transition: .5s;
+}
+.mainOptionsLink a:hover{
+	background: white;
+	color: brown;
+}
+.mainOptionsLink a:hover > .arrowIcon{
+	color: brown;
+}
+/*-----------------------SECTION MAIN PAGE-----------------------------*/
 	/*background: #EB5757;*/  /* fallback for old browsers */
 	/*background: -webkit-linear-gradient(to right, #000000, #EB5757); */ /* Chrome 10-25, Safari 5.1-6 */
 	/*background: linear-gradient(to right, #000000, #EB5757);*/ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	max-width: 100%;	
-	padding-left: 0px;
-	padding-right: 0px;
-	height: 100vh;
-	justify-content: center;
-    display: flex;
-    align-items: center;
-}
-#mainContainer > div > a >div{
-	height: 100%;
-}
-.col{
-	height: 100%;
-	padding-left: 0px;
-	padding-right: 0px;
-}
-.cover{
-	background-size: cover;
-	background-position: center;
-	background-blend-mode: darken;
-	transition: 0.5s;
-	filter: brightness(0.5);
-}
-.cover:hover{
 
-	filter: brightness(1);
-}
-.mainPageTitles{
-	top: 100px;
-    color: white;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-}
 
 
 /*--------------------------------BK BIBLE STUDIES-----------------------*/
-.quoteContainer{
-	background-image: url('../images/brooklynBridge.jpg');
-	max-width: 100%;
-	background-position: center;
-    height: 100vh;
-    background-attachment: fixed;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 76px;
-}
-.quote{
-	padding: 1em;
-	color: white;
-    max-width: 80%;
-    font-size: 2em;
-    text-align: justify;
-    text-shadow: black 1px 1px 7px;
-    background: rgba(255,255,255,0.2);
-}
-#bibleStudiesOptions h1{
-	color: #E0E0E2;
-	background-color: #9F3E22;
-	min-height: 100px;
-	margin:0px;
-	padding:1em;
-	text-align: center;
-}
-
-
-
-
-.classesContainer:first-child{
-	background-image: url(../images/wood2.jpg);
-	min-height: 450px;
-}
-.studiesPolaroid{
-	width: 18em;
-	height: 23em;
-    margin: auto;
-    margin-top: 3em;
-    padding-top: 2em;
-    border-radius: 0px;
-    border: 0px;
-    box-shadow: rgba(0,0,0,1) 5px 5px 10px 2px;
-
-}
-.classesContainer .row:nth-child(1) .studiesPolaroid{ /*Brooklyn Bible studies*/
-	transform: rotate(-22deg);
-}
-.classesContainer .row:nth-child(2) .studiesPolaroid{ /*Individual Bible study*/
-	transform: rotate(15deg);
-}
-.classesContainer .row:nth-child(3) .studiesPolaroid{ /*Conference call Bible study*/
-	transform: rotate(-5deg);
-}
-.classesContainer .row:nth-child(4) div:nth-child(2) div:first-child{ /*Men's and women's*/
-	transform: rotate(-15deg);
-}
-.classesContainer .row:nth-child(4) div:nth-child(4) div:first-child{ /*Central Brooklyn library*/
-	transform: rotate(40deg);
-}
-.studiesPolaroiid img{
-	border-radius: 0px;
-}
-.polaroidText{
-	display: flex;
-	align-items: center;
-    font-size: 150%;
-    font-weight: 300;
-    color: rgba(255,255,255,1);
-}
-.polaroidText p span{
-	color: brown;
-	font-weight: 400;
-}
-.polaroidText p{
-	text-shadow: rgba(0,0,0,1) 1px 1px 2px;
-    background: rgba(255,255,255,0.2);
-    width: 80%;
-    position: absolute;
-    right: 0px;
-    padding: 1em;
-}
-.studiesTitles{
-	text-align: center;
-	font-weight: 600;
-}
-

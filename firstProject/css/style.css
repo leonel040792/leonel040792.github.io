@@ -5,7 +5,7 @@
 body{
 	font-family: robotoSlab, Helvetica, Arial, Sans-serif;
 	overflow-x: hidden;
-	width: 100vw;
+	width: 100vw !important;
 }
 /*--------------------------Main Page------------------------------------*/
 .mainHeader{
@@ -193,27 +193,15 @@ ul li:nth-child(3) a{
 	color: brown;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /*----------------END OF INTRO----------------------*/
 #BKbibleStudies{
 	background-image: url(../images/fondo.svg); 
 	max-width: 100vw;
 	margin: 0px;
-	padding-bottom: 70px;
+	/*padding-bottom: 70px;*/
 	padding-right: 0px;
 	padding-left: 0px;
 }
-
 #bibleStudiesOpportunities{
 	text-align: center;
     font-size: 56px;
@@ -284,20 +272,20 @@ p.card-text{
 .btnStudies:hover{
 	color: #A13E1B;
 }
-
+/*--------------END OF STUDIES OPTIONS------------*/
 .bkSocialMedia{
 	min-width: 100vw;
-    border-top: 5px solid brown;
-    border-bottom: 5px solid brown;
+    border-top: 5px solid #A13E1B;
+    border-bottom: 5px solid #A13E1B;
     min-height: 300px;
-
+    margin: 0px;
     background-image: url(../images/ppc5.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
 
 .bkSocialMedia div:first-child{
-	background: brown;
+	background: #A13E1B;
 	border-top-right-radius: 130px;
 	border-bottom-right-radius: 130px;
 	display: flex;
@@ -313,103 +301,87 @@ p.card-text{
     text-align: center;
 }
 .mediaIcons{
-	color: white;
+	color: #FFFF;
     transition: .5s;
 }
 .mediaIcons:hover{
-	color: brown;
+	color: #A13E1B;
 }
-
-
-/*testing*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*.form-style-8{
-	font-family: 'Open Sans Condensed', arial, sans;
-	width: 500px;
-	padding: 30px;
-	background: #FFFFFF;
-	margin: 50px auto;
-	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
-	-moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
-	-webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
-
+/*-------------END OF SOCIAL MEDIA-----------*/
+.formContainer{
+	margin: 2em;
 }
-.form-style-8 h2{
-	background: #4D4D4D;
-	text-transform: uppercase;
-	font-family: 'Open Sans Condensed', sans-serif;
-	color: #797979;
-	font-size: 18px;
-	font-weight: 100;
-	padding: 20px;
-	margin: -30px -30px 30px -30px;
+.formContainer form{
+	width: 50%;
+    margin: auto;
+    padding-top: 5%;
+    margin-left: 10%;
 }
-.form-style-8 input[type="text"],
-.form-style-8 input[type="date"],
-.form-style-8 input[type="datetime"],
-.form-style-8 input[type="email"],
-.form-style-8 input[type="number"],
-.form-style-8 input[type="search"],
-.form-style-8 input[type="time"],
-.form-style-8 input[type="url"],
-.form-style-8 input[type="password"],
-.form-style-8 textarea,
-.form-style-8 select 
-{
-	box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	outline: none;
-	display: block;
-	width: 100%;
-	padding: 7px;
-	border: none;
-	border-bottom: 1px solid #ddd;
-	background: transparent;
-	margin-bottom: 10px;
-	font: 16px Arial, Helvetica, sans-serif;
-	height: 45px;
+.prueba{
+	margin: 3px;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: transparent;
+    border-bottom: 1px dashed black;
+    border-radius: 0px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    border-top: none;
+    border-left: none;
+    border-right: none;
 }
-.form-style-8 textarea{
-	resize:none;
-	overflow: hidden;
+input:focus, textarea:focus{
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(161, 62, 27, 0.6);
+    outline: none;
 }
-.form-style-8 input[type="button"], 
-.form-style-8 input[type="submit"]{
-	-moz-box-shadow: inset 0px 1px 0px 0px #45D6D6;
-	-webkit-box-shadow: inset 0px 1px 0px 0px #45D6D6;
-	box-shadow: inset 0px 1px 0px 0px #45D6D6;
-	background-color: #2CBBBB;
-	border: 1px solid #27A0A0;
-	display: inline-block;
-	cursor: pointer;
-	color: #FFFFFF;
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-size: 14px;
-	padding: 8px 18px;
-	text-decoration: none;
-	text-transform: uppercase;
+.botonFormulario{
+    background: transparent;
+    color: #A13E1B;
+    transition: .4s;
+    border-radius: 25px;
+    border: 2px solid #A13E1B;
+    width: 50%;
+    font-weight: 900;
 }
-.form-style-8 input[type="button"]:hover, 
-.form-style-8 input[type="submit"]:hover {
-	background:linear-gradient(to bottom, #34CACA 5%, #30C9C9 100%);
-	background-color:#34CACA;
-}*/
+.botonFormulario:hover{
+    background: #A13E1B;
+    color: #FFFF;
+}
+::placeholder{ 
+  color: #A13E1B;
+  opacity: 1; /* Firefox */
+}
+textarea.prueba{
+	height: auto;
+	resize: none;
+}
+.formContainer div:first-child{
+	display: flex;
+	flex-wrap: wrap;
+}
+#formTitle{
+	font-size: 54px;
+	color: #A13E1B;
+	margin:auto;
+}
+#formTitle span{
+	border-bottom: 3px solid #A13E1B;
+}
+#formText{
+	width: 80%;
+	color: #4F4F4E;
+    font-size: 1.1em;
+	text-align: center;
+	margin: auto;
+	margin-top: 0px;
+}
+/*------------END OF FORM------------------------*/
+#BKbibleStudiesVerse{
+	background: #A13E1B;
+	color: #FFFF;
+	text-align: center;
+	font-size: 1em;
+	padding: 1em;
+}
